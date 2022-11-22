@@ -126,7 +126,7 @@ h1,
 h2,
 h3 {
   color: black;
-  font-weight: var(--font-semi-bold);
+  font-size: 1rem;
 }
 ul {
   list-style: none;
@@ -152,9 +152,10 @@ button {
 }
 
 .section__title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+  font-weight: 800;
   text-align: center;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .section__subtitle {
