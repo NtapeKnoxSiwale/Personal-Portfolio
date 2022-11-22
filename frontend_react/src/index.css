@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  ---background-color: black;
+
+  --primary-color: white;
+  --secondary-color: #ee0000;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+  --navbar-background-color: black;
+
+  /* Header Colors */
+  --button-background-color: black;
+  --button-hover-color: #ee0000;
+  --container-color: white;
+
+  /* App */
+  --works-color: white;
+  /* Footer */
+  --contact-card-color: black;
+  --title-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

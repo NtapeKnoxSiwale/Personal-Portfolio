@@ -1,0 +1,212 @@
+.app {
+  background-color: var(--background-color);
+  font-family: var(--font-base);
+}
+
+.app__whitebg {
+  background-color: var(--white-color);
+}
+
+.app__primarybg {
+  background-color: var(--works-color);
+}
+
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__wrapper {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  padding: 4rem 2rem;
+
+  @media screen and (max-width: 450px) {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+.head-text {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+
+// Home setup
+
+/* Vairables css */
+
+:root {
+  --header-height: 3rem;
+  /* Font weight */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* Responsive typography */
+  @media screen and (max-width: 992px) {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+  font-size: var(--normal-font-size);
+}
+/* Font color on the home */
+body {
+  color: black;
+}
+h1,
+h2,
+h3 {
+  color: black;
+  font-weight: var(--font-semi-bold);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Reusable CSS Classes */
+.section {
+  padding: 6rem 0 2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+}
+
+.section__subtitle {
+  text-align: center;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+/* Layout */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 450px) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.container__footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Buttons */
+.button {
+  display: inline;
+  background-color: var(--button-background-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 400;
+
+  &:hover {
+    background-color: var(--button-hover-color);
+    color: white;
+  }
+
+  .button__icon {
+    margin-left: 0.5rem;
+  }
+  .button--flex {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Breakpoints */
