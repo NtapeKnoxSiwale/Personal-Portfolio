@@ -1,8 +1,7 @@
 .footer {
   background-color: black;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: 0;
-  margin-right: 0;
+  width: 100%;
 }
 
 .footer__container {
@@ -56,6 +55,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .footer__title {
+    font-size: 1.25rem;
+  }
   .footer__social-link {
     padding: 0.25rem;
     border-radius: 0.25rem;

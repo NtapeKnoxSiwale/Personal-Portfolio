@@ -7,11 +7,12 @@ const Data = () => {
         Ntapechela <span>Knox</span> Siwale
       </h1>
       <h3 className="home__subtitle">
-        Programmer | Software Developer | Data Scientist | UI/UX Designer
+        Programmer <span>|</span> Software Developer <span>|</span> UI/UX
+        Designer <span>|</span> Data Scientist
       </h3>
       <p className="home__description">
-        I'm a creative developer specializing in building (and occasionally
-        designing) digital experiences.
+        I'm a independent creative developer specializing in building (and
+        occasionally designing) digital experiences.
       </p>
     </div>
   );

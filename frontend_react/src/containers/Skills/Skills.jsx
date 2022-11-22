@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
 
 import { client, urlFor } from "../../client";
-import { AppWrap, MotionWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../components/wrapper";
 import "./Skills.scss";
 
 const Skills = () => {

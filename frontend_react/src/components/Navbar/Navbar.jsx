@@ -9,11 +9,11 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <a className="nav__logo" href="index.html">
-          KnoxThe<span>Developer</span>
+          knox.<span>dev</span>
         </a>
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "contact"].map((item) => (
+        {["home", "services", "projects", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
           </li>
@@ -22,10 +22,10 @@ const Navbar = () => {
       <div className="app__navbar-menu">
         <HiMenu onClick={() => setToggle(true)} />
         {toggle && (
-          <motion.div animate transition={{ duration: 300, ease: "easeOut" }}>
+          <motion.div transition={{ duration: 300, ease: "easeOut" }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "contact"].map((item) => (
+              {["home", "services", "projects", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
