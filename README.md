@@ -2,4 +2,4 @@
 
 A React Portfolio website that uses Sanity as a backend.
 
- knoxdev.netlify.app
+[CLICK HERE TO CHECK IT OUT](knoxdev.netlify.app)
