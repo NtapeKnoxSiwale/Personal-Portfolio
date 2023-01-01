@@ -11,7 +11,7 @@ const Data = () => {
         Designer <span>|</span> Data Scientist
       </h3>
       <p className="home__description">
-        I'm a independent creative developer specializing in building (and
+        I'm an independent creative developer specializing in building (and
         occasionally designing) digital experiences.
       </p>
     </div>

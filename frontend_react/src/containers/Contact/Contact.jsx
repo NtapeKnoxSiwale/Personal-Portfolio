@@ -33,41 +33,53 @@ const Contact = () => {
           <h3 className="contact__title">Contact me</h3>
 
           <div className="contact__info">
-            <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-              <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
-                ntape.k.siwale@mail.com
-              </span>
-              <a
-                href="mailto:ntape.k.siwale@gmail.com"
-                className="contact__button">
-                Email me
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="uil uil-whatsapp contact__card-icon"></i>
-              <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+260 963 841980</span>
-              <a
-                href="https://wa.me/260963841980?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service..."
-                className="contact__button">
-                Let's chat
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="uil uil-facebook-messenger contact__card-icon"></i>
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">Ntape Knox Siwale</span>
-              <a href="https://m.me/ntape.k.siwale" className="contact__button">
-                Let's chat
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
+            <a
+              className="contact__button_mob"
+              href="mailto:ntape.k.siwale@gmail.com">
+              <div className="contact__card">
+                <i className="bx bx-mail-send contact__card-icon"></i>
+                <h3 className="contact__card-title">Email</h3>
+                <span className="contact__card-data">
+                  ntape.k.siwale@mail.com
+                </span>
+                <a
+                  href="mailto:ntape.k.siwale@gmail.com"
+                  className="contact__button">
+                  Email me
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </a>
+            <a
+              href="https://wa.me/260963841980?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service..."
+              className="contact__button_mob">
+              <div className="contact__card">
+                <i className="uil uil-whatsapp contact__card-icon"></i>
+                <h3 className="contact__card-title">WhatsApp</h3>
+                <span className="contact__card-data">+260 963 841980</span>
+                <a
+                  href="https://wa.me/260963841980?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service..."
+                  className="contact__button">
+                  Let's chat
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </a>
+            <a
+              href="https://m.me/ntape.k.siwale"
+              className="contact__button_mob">
+              <div className="contact__card">
+                <i className="uil uil-facebook-messenger contact__card-icon"></i>
+                <h3 className="contact__card-title">Messenger</h3>
+                <span className="contact__card-data">Ntape Knox Siwale</span>
+                <a
+                  href="https://m.me/ntape.k.siwale"
+                  className="contact__button">
+                  Let's chat
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -109,7 +121,6 @@ const Contact = () => {
                   placeholder="Write your project"
                   vali></textarea>
               </div>
-
               <button className="button button--flex" onClick={sendEmail}>
                 {!loading ? "Send Message" : "Sending..."}
               </button>

@@ -3,6 +3,9 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+span {
+  color: #ee0000;
+}
 
 .footer__container {
   padding: 3rem 0 4rem;
@@ -15,7 +18,9 @@
 }
 
 .footer__title {
+  font-size: 1.25rem;
   text-align: center;
+  font-weight: 200;
   margin-bottom: 2rem;
 }
 
