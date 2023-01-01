@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 import { client, urlFor } from "../../client";
-import { AppWrap, MotionWrap } from "../../wrapper";
-import "./About.scss";
+import { AppWrap, MotionWrap } from "../../components/wrapper";
+import "./Services.scss";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -16,9 +16,8 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        I turn<span> ideas</span> into real life <span>products </span>.
-      </h2>
+      <h2 className="head-text">Services</h2>
+      <h3 className="subhead-text">I turn ideas into real life products.</h3>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -44,6 +43,6 @@ const About = () => {
 
 export default AppWrap(
   MotionWrap(About, "app__about"),
-  "about",
+  "services",
   "app__whitebg"
 );

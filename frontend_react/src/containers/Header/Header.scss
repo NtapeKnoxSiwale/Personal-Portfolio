@@ -1,19 +1,12 @@
+.section {
+  padding: 6rem 0 2rem;
+}
 .home__content {
   grid-template-columns: 120px repeat(2, 1fr);
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
   align-content: center;
-  margin-left: 0;
-  margin-right: 0;
-}
-span {
-  color: #ee0000;
-}
-h3 {
-  margin-top: 1rem;
-  font-size: var(--normal-font-size);
-  font-weight: 200;
 }
 
 .home__social {
@@ -40,24 +33,18 @@ h3 {
 .home__subtitle {
   position: relative;
   font-size: 1.25;
-  padding-left: 5.4rem;
-  font-weight: 400;
+  color: var(--secondary-color);
+  font-weight: 200;
   margin-bottom: 1rem;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    background-color: #ee0000;
-    left: 0;
-    top: 1rem;
+  span {
+    color: var(--black-color);
   }
 }
 
 .home__description {
   max-width: 400px;
   margin-bottom: 3rem;
+  color: #262626;
 }
 
 .home__img {
@@ -84,12 +71,13 @@ a {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;
   }
+  .home__title {
+    font-size: 2rem;
+  }
   .home__subtitle {
-    padding-left: 3.75rem;
     margin-bottom: 1rem;
-    &::before {
-      width: 42px;
-      top: 0.8rem;
+    @media (orientation: portrait) {
+      text-align: center;
     }
   }
   .home__description {
@@ -105,7 +93,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 2rem;
   }
   .home__content {
     grid-template-columns: 1fr;
@@ -131,21 +119,11 @@ a {
     padding: 0 10px;
   }
   .home__title {
+    text-align: center;
     font-size: 1.8rem;
   }
   .home__subtitle {
     font-size: 1.25;
-    padding-left: 2.4rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 4px;
-      background-color: #ee0000;
-      left: 0;
-      top: 1rem;
-    }
   }
 }
 

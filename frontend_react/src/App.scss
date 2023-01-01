@@ -36,10 +36,10 @@
 }
 
 .head-text {
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--secondary-color);
   text-transform: capitalize;
 
   span {
@@ -126,7 +126,7 @@ h1,
 h2,
 h3 {
   color: black;
-  font-weight: var(--font-semi-bold);
+  font-size: 1rem;
 }
 ul {
   list-style: none;
@@ -146,15 +146,15 @@ button {
 
 /* Reusable CSS Classes */
 .section {
-  padding: 6rem 0 2rem;
   margin-left: 0;
   margin-right: 0;
 }
 
 .section__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 800;
   text-align: center;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .section__subtitle {

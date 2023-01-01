@@ -49,27 +49,37 @@
 }
 
 .contact__card-data {
-  color: rgb(148, 148, 148);
+  color: rgb(120, 120, 120);
   display: block;
   margin-bottom: 0.75rem;
 }
 
 .contact__button {
-  color: var(--secondary-color);
+  color: black;
   font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
 }
+.contact__button_mob {
+  &:hover {
+    .contact__card {
+      background-color: var(--secondary-color);
+      transition: all 0.3s ease;
+    }
+    .contact__button {
+      color: var(--primary-color);
+    }
+    .contact__button:hover .contact__button-icon {
+      transform: translate(0.3rem);
+    }
+  }
+}
 
 .contact__button-icon {
   font-size: 1rem;
   transition: 0.3s;
-}
-
-.contact__button:hover .contact__button-icon {
-  transform: translate(0.3rem);
 }
 
 .contact__form-div {

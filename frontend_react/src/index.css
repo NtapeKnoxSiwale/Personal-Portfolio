@@ -5,9 +5,9 @@
 
   ---background-color: black;
 
-  --primary-color: white;
+  --primary-color: #f2f2f2;
   --secondary-color: #ee0000;
-  --black-color: #030303;
+  --black-color: #0d0d0d;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
@@ -20,7 +20,7 @@
   --container-color: white;
 
   /* App */
-  --works-color: white;
+  --works-color: #f2f2f2;
   /* Footer */
   --contact-card-color: black;
   --title-color: white;
