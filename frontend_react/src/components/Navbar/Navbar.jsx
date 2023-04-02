@@ -3,36 +3,37 @@ import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import "./Navbar.scss";
 
+const links = ["home", "projects", "contact"];
+const mobileLinks = [...links];
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => setToggle((prev) => !prev);
+
+  const renderLinks = (isMobile = false) =>
+    (isMobile ? mobileLinks : links).map((item) => (
+      <li key={`link-${item}`}>
+        <a href={`/${item}`} onClick={() => isMobile && handleToggle()}>
+          {item}
+        </a>
+      </li>
+    ));
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <a className="nav__logo" href="index.html">
+        <a className="nav__logo" href="/home">
           knox.<span>dev</span>
         </a>
       </div>
-      <ul className="app__navbar-links">
-        {["home", "services", "projects", "contact"].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
-            <a href={`#${item}`}>{item}</a>
-          </li>
-        ))}
-      </ul>
+      <ul className="app__navbar-links">{renderLinks()}</ul>
       <div className="app__navbar-menu">
-        <HiMenu onClick={() => setToggle(true)} />
+        <HiMenu onClick={handleToggle} />
         {toggle && (
-          <motion.div transition={{ duration: 300, ease: "easeOut" }}>
-            <HiX onClick={() => setToggle(false)} />
-            <ul>
-              {["home", "services", "projects", "contact"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <motion.div transition={{ duration: 0.3, ease: "easeOut" }}>
+            <HiX onClick={handleToggle} />
+            <ul>{renderLinks(true)}</ul>
           </motion.div>
         )}
       </div>
