@@ -5,13 +5,13 @@ import { client, urlFor } from "../../client";
 import { AppWrap, MotionWrap } from "../../components/wrapper";
 import "./Services.scss";
 
-const About = () => {
-  const [abouts, setAbouts] = useState([]);
+const Services = () => {
+  const [services, setServices] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
+    const query = '*[_type == "services"]';
 
-    client.fetch(query).then((data) => setAbouts(data));
+    client.fetch(query).then((data) => setServices(data));
   }, []);
 
   return (
@@ -20,19 +20,20 @@ const About = () => {
       <h3 className="subhead-text">I turn ideas into real life products.</h3>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
+        {services.map((service, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
-            key={about.title + index}>
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            key={service.title + index}
+          >
+            <img src={urlFor(service.imgUrl)} alt={service.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
+              {service.title}
             </h2>
             <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
+              {service.description}
             </p>
           </motion.div>
         ))}
@@ -42,7 +43,7 @@ const About = () => {
 };
 
 export default AppWrap(
-  MotionWrap(About, "app__about"),
+  MotionWrap(Services, "app__services"),
   "services",
   "app__whitebg"
 );

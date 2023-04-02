@@ -11,8 +11,13 @@ const Data = () => {
         Scientist
       </h3>
       <p className="home__description">
-        I'm an independent creative developer specializing in building (and
-        occasionally designing) digital experiences.
+        I'm an independent creative developer with a passion for building
+        dynamic digital experiences. From custom web and mobile apps to
+        data-driven analyses and beautiful user interfaces, I have the skills
+        and expertise to bring your vision to life. With a focus on innovation,
+        creativity, and user-centered design, I'll work closely with you to
+        create solutions that meet your unique needs and exceed your
+        expectations.
       </p>
     </div>
   );

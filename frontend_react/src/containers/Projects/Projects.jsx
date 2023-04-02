@@ -39,7 +39,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">Projects</h2>
-      <h3>Here are some things I've built</h3>
+      <h3>Check out some of my recent projects</h3>
 
       <div className="app__work-filter">
         {["UI/UX", "Web App", "Mobile App", "Data Science", "All"].map(
