@@ -7,8 +7,8 @@ const Data = () => {
         Ntapechela <span>Knox</span> Siwale
       </h1>
       <h3 className="home__subtitle">
-        Programmer <span>|</span> Software Developer <span>|</span> UI/UX
-        Designer <span>|</span> Data Scientist
+        Software Developer <span>|</span> UI/UX Designer <span>|</span> Data
+        Scientist
       </h3>
       <p className="home__description">
         I'm an independent creative developer specializing in building (and

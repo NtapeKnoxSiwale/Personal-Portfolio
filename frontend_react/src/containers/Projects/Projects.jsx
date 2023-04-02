@@ -42,14 +42,15 @@ const Work = () => {
       <h3>Here are some things I've built</h3>
 
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["UI/UX", "Web App", "Mobile App", "Data Science", "All"].map(
           (item, index) => (
             <div
               key={index}
               onClick={() => handleWorkFilter(item)}
               className={`app__work-filter-item app__flex p-text ${
                 activeFilter === item ? "item-active" : ""
-              }`}>
+              }`}
+            >
               {item}
             </div>
           )
@@ -58,7 +59,8 @@ const Work = () => {
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__work-portfolio">
+        className="app__work-portfolio"
+      >
         {filterWork.map((work, index) => (
           <a href={work.projectLink} target="_blank" rel="noreferrer">
             <div className="app__work-item app__flex" key={index}>
@@ -72,13 +74,15 @@ const Work = () => {
                     ease: "easeInOut",
                     staggerChildren: 0.5,
                   }}
-                  className="app__work-hover app__flex">
+                  className="app__work-hover app__flex"
+                >
                   <a href={work.projectLink} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
                       transition={{ duration: 0.25 }}
-                      className="app__flex">
+                      className="app__flex"
+                    >
                       <AiFillEye />
                     </motion.div>
                   </a>
@@ -87,7 +91,8 @@ const Work = () => {
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
                       transition={{ duration: 0.25 }}
-                      className="app__flex">
+                      className="app__flex"
+                    >
                       <AiFillGithub />
                     </motion.div>
                   </a>
