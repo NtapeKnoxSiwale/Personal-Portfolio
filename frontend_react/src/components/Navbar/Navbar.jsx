@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import "./Navbar.scss";
 
-const links = ["home", "projects", "contact"];
+const links = ["home", "projects", "contact", "about"];
 const mobileLinks = [...links];
 
 const Navbar = () => {
