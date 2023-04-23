@@ -1,7 +1,7 @@
 {
-  "name": "frontend_react",
-  "version": "0.1.0",
-  "private": true,
+  "name": "project_portfolio",
+  "version": "2.0.0",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@sanity/client": "^5.4.1",
@@ -45,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "My personal project portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/NtapeKnoxSiwale/React-Personal-Portfolio.git",
+  "author": "NtapeKnoxSiwale <ntape.k.siwale@gmail.com>",
+  "license": "MIT"
 }
